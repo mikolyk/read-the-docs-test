@@ -1,10 +1,13 @@
 version: 2
 
-# Укажи, где лежат исходники документации
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.11"
+
 sphinx:
   configuration: docs/conf.py
 
-# Дополнительные зависимости для сборки
 python:
   install:
     - requirements: docs/requirements.txt
