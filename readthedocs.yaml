@@ -1,0 +1,10 @@
+version: 2
+
+# Укажи, где лежат исходники документации
+sphinx:
+  configuration: docs/conf.py
+
+# Дополнительные зависимости для сборки
+python:
+  install:
+    - requirements: docs/requirements.txt
